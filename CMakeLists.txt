@@ -16,7 +16,7 @@ find_package(PkgConfig)
 option(DEBUG_BUILD "This is debug build." OFF)
 
 # set gcc flags
-set(CMAKE_C_FLAGS "-Wall -O2")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -O2")
 
 if(DEBUG_BUILD)
     add_definitions(-DDEBUG)
